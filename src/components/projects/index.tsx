@@ -1,7 +1,7 @@
-import React, {FC} from "react";
-import Link from "components/link";
-import ProjectModel from 'models/project'
-import styled from "styled-components";
+import Link from 'components/link';
+import ProjectModel from 'models/project';
+import React, { FC } from 'react';
+import styled from 'styled-components';
 
 const Root = styled.li`
   line-height: 1.3rem;
@@ -13,7 +13,10 @@ const Root = styled.li`
 
 const SingleProject: FC<ProjectModel> = ({ name, link, tagline, what }) => (
   <Root>
-    <Link target="_blank" rel="noopener noreferrer" href={link}>{name}</Link> &mdash; <span style={{ fontStyle: 'cursive' }}>{tagline}</span>
+    <Link target="_blank" rel="noopener noreferrer" href={link}>
+      {name}
+    </Link>{' '}
+    &mdash; <span style={{ fontStyle: 'cursive' }}>{tagline}</span>
     {what && (
       <ul>
         {what.map(thing => (
@@ -30,8 +33,10 @@ interface Props {
 
 const Projects: FC<Props> = ({ projects }) => (
   <ul>
-    {projects.map(project => <SingleProject key={project.name} {...project} />)}
+    {projects.map(project => (
+      <SingleProject key={project.name} {...project} />
+    ))}
   </ul>
 );
 
-export default Projects
+export default Projects;
