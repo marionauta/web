@@ -5,7 +5,7 @@ import Link from '../link';
 
 const SingleSocialMedia: FC<Site> = ({ name, link }) => (
   <li>
-    <Link target="_blank" rel="noopener noreferrer" href={link}>
+    <Link target="_blank" rel="me noopener noreferrer" href={link}>
       {name}
     </Link>
   </li>
