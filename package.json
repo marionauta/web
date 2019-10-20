@@ -21,13 +21,11 @@
     "@types/node": "12.0.7",
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
-    "@types/styled-components": "^4.1.16",
     "husky": "^2.4.1",
     "lint-staged": "^8.2.0",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.3.1",
     "tslint": "^5.17.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
@@ -36,7 +34,11 @@
     "typescript": "3.5.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "autoprefixer": "^9.6.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-typed-css-modules": "^1.1.0",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.0"
   },
   "browserslist": {
     "production": [

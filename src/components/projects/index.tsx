@@ -1,18 +1,10 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
 import Link from '~components/link';
 import ProjectModel from '~models/project';
-
-const Root = styled.li`
-  line-height: 1.3rem;
-
-  :not(:last-child) {
-    margin-bottom: 1rem;
-  }
-`;
+import { root } from './styles.scss';
 
 const SingleProject: FC<ProjectModel> = ({ name, link, tagline, what }) => (
-  <Root>
+  <div className={root}>
     <Link target="_blank" rel="noopener noreferrer" href={link}>
       {name}
     </Link>{' '}
@@ -24,7 +16,7 @@ const SingleProject: FC<ProjectModel> = ({ name, link, tagline, what }) => (
         ))}
       </ul>
     )}
-  </Root>
+  </div>
 );
 
 interface Props {
