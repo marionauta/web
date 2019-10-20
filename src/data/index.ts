@@ -1,4 +1,4 @@
-import Site from 'models/site';
+import Site from '~models/site';
 
 export const socialmedia: Site[] = [
   {
