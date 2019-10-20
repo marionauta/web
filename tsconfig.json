@@ -7,7 +7,10 @@
       "esnext"
     ],
     "allowJs": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "paths": {
+      "~*": ["./src/*"]
+    },
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,8 +22,5 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve"
-  },
-  "include": [
-    "src"
-  ]
+  }
 }

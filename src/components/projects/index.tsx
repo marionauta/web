@@ -1,7 +1,7 @@
-import Link from 'components/link';
-import ProjectModel from 'models/project';
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import Link from '~components/link';
+import ProjectModel from '~models/project';
 
 const Root = styled.li`
   line-height: 1.3rem;

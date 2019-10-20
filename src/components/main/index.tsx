@@ -1,7 +1,7 @@
-import Link from 'components/link';
-import SocialMedia from 'components/socialmedia';
-import { socialmedia } from 'data';
 import React, { FC } from 'react';
+import Link from '~components/link';
+import SocialMedia from '~components/socialmedia';
+import { socialmedia } from '~data';
 import { Header, PageWrapper, Paragraph, SectionHeader } from './styles';
 
 const Main: FC = () => {

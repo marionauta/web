@@ -1,6 +1,6 @@
-import Site from 'models/site';
-import SocialMediaModel from 'models/socialmedia';
 import React, { FC } from 'react';
+import Site from '~models/site';
+import SocialMediaModel from '~models/socialmedia';
 import Link from '../link';
 
 const SingleSocialMedia: FC<Site> = ({ name, link }) => (
