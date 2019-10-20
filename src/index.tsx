@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { h, render } from 'preact';
 import Main from '~components/main';
 import './index.css';
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+render(<Main />, document.body);

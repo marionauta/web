@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import { h } from 'preact';
 import Link from '~components/link';
 import SocialMedia from '~components/socialmedia';
 import { socialmedia } from '~data';
 import { header, pageWrapper, sectionHeader } from './styles.scss';
 
-const Main: FC = () => {
+const Main = () => {
   return (
     <div className={pageWrapper}>
       <h1 className={header}>Mario Nachbaur</h1>

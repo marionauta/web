@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
+import { h } from 'preact';
 import Site from '~models/site';
 import SocialMediaModel from '~models/socialmedia';
 import Link from '../link';
 
-const SingleSocialMedia: FC<Site> = ({ name, link }) => (
+const SingleSocialMedia = ({ name, link }: Site) => (
   <li>
     <Link target="_blank" rel="me noopener noreferrer" href={link}>
       {name}
@@ -11,7 +11,7 @@ const SingleSocialMedia: FC<Site> = ({ name, link }) => (
   </li>
 );
 
-const SocialMedia: FC<SocialMediaModel> = ({ sites }) => (
+const SocialMedia = ({ sites }: SocialMediaModel) => (
   <ul>
     {sites.map(site => (
       <SingleSocialMedia key={site.name} {...site} />
