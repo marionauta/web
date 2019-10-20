@@ -1,6 +1,8 @@
 import { h } from 'preact';
 import { link } from './styles.scss';
 
-const Link = props => <a className={link} {...props} />;
+type Props = h.JSX.HTMLAttributes;
+
+const Link = (props: Props) => <a className={link} {...props} />;
 
 export default Link;
