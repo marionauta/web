@@ -1,13 +1,8 @@
-import styled from 'styled-components';
+import { h } from 'preact';
+import { link } from './styles.scss';
 
-const Link = styled.a`
-  color: orange;
-  text-decoration: none;
-  transition: color 0.2s;
+type Props = h.JSX.HTMLAttributes;
 
-  :hover {
-    color: darkorange;
-  }
-`;
+const Link = (props: Props) => <a className={link} {...props} />;
 
 export default Link;

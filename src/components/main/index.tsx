@@ -1,27 +1,27 @@
-import Link from 'components/link';
-import SocialMedia from 'components/socialmedia';
-import { socialmedia } from 'data';
-import React, { FC } from 'react';
-import { Header, PageWrapper, Paragraph, SectionHeader } from './styles';
+import { h } from 'preact';
+import Link from '~components/link';
+import SocialMedia from '~components/socialmedia';
+import { socialmedia } from '~data';
+import { header, pageWrapper, sectionHeader } from './styles.scss';
 
-const Main: FC = () => {
+const Main = () => {
   return (
-    <PageWrapper>
-      <Header>Mario Nachbaur</Header>
+    <div className={pageWrapper}>
+      <h1 className={header}>Mario Nachbaur</h1>
 
-      <Paragraph>
+      <p>
         Full Stack software developer at{' '}
         <Link target="_blank" rel="noopener noreferrer" href="https://z1.digital">
           Z1 Digital Studio
         </Link>
         , mainly focused on building great web & mobile apps.
-      </Paragraph>
+      </p>
 
-      <Paragraph>Artificial Inteligence, Functional Programming & Rubik Cubes.</Paragraph>
+      <p>Artificial Inteligence, Functional Programming & Rubik Cubes.</p>
 
-      <SectionHeader>See Also</SectionHeader>
+      <h2 className={sectionHeader}>See Also</h2>
       <SocialMedia sites={socialmedia} />
-    </PageWrapper>
+    </div>
   );
 };
 
