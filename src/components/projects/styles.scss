@@ -1,7 +1,15 @@
-.root {
+.project {
   line-height: 1.3rem;
 
-  :not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 1rem;
   }
+}
+
+.projectName {
+  font-weight: bold;
+}
+
+.root {
+  padding: 0;
 }

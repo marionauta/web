@@ -1,7 +1,8 @@
 import { h } from 'preact';
 import Link from '~components/link';
+import Projects from '~components/projects';
 import SocialMedia from '~components/socialmedia';
-import { socialmedia } from '~data';
+import { projects, socialmedia } from '~data';
 import { header, pageWrapper, sectionHeader } from './styles.scss';
 
 const Main = () => {
@@ -21,6 +22,9 @@ const Main = () => {
 
       <h2 className={sectionHeader}>See Also</h2>
       <SocialMedia sites={socialmedia} />
+
+      <h2 class={sectionHeader}>Projects</h2>
+      <Projects projects={projects} />
     </div>
   );
 };
