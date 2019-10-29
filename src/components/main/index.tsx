@@ -1,8 +1,9 @@
-import { h } from 'preact';
+import { Fragment, h } from 'preact';
+import Articles from '~components/articles';
 import Link from '~components/link';
 import Projects from '~components/projects';
 import SocialMedia from '~components/socialmedia';
-import { projects, socialmedia } from '~data';
+import { articles, projects, socialmedia } from '~data';
 import { header, pageWrapper, sectionHeader } from './styles.scss';
 
 const Main = () => {
@@ -22,6 +23,13 @@ const Main = () => {
 
       <h2 className={sectionHeader}>See Also</h2>
       <SocialMedia sites={socialmedia} />
+
+      {articles.length > 0 && (
+        <Fragment>
+          <h2 class={sectionHeader}>Words</h2>
+          <Articles articles={articles} />
+        </Fragment>
+      )}
 
       <h2 class={sectionHeader}>Projects</h2>
       <Projects projects={projects} />

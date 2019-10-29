@@ -1,3 +1,4 @@
+import { Article } from '~models/article';
 import Project from '~models/project';
 import Site from '~models/site';
 
@@ -28,5 +29,13 @@ export const projects: Project[] = [
     link: 'https://loftsmart.com',
     tagline: "College is hard - leasing an appartment shouldn't be",
     what: ['Backend with Django and REST Framework', 'Frontend written in React'],
+  },
+];
+
+export const articles: Article[] = [
+  {
+    title: 'Avoid notches in your PWA with just CSS',
+    link: 'https://dev.to/marionauta/avoid-notches-in-your-pwa-with-just-css-al7',
+    abstract: 'Quick notes about avoiding the iPhone X notch on the web',
   },
 ];
