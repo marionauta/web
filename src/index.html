@@ -1,15 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="orange" />
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <title>Mario Nachbaur</title>
-  </head>
-  <body>
-    <noscript>You need JavaScript to view this site.</noscript>
-    <div id="root"></div>
-    <script src="index.tsx"></script>
-  </body>
+
+<head>
+  <meta charset=utf-8 />
+  <meta name=viewport content="width=device-width, initial-scale=1" />
+  <meta name=theme-color content=#fa0 />
+  <link href=data:, rel=icon />
+  <title>Mario Nachbaur</title>
+</head>
+
+<style>
+  body {
+    background: #fff;
+    color: #000;
+    font-family: monospace;
+    font-size: 16px;
+    margin: 1rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  a {
+    color: #fa0;
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  a:hover {
+    color: #f80;
+  }
+
+  .page-wrapper {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+
+  .header {
+    font-size: 2rem;
+    font-weight: inherit;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+    font-weight: inherit;
+  }
+
+  .project:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .project--name {
+    font-weight: 700;
+  }
+</style>
+
+<body>
+  <div class=page-wrapper>
+    <h1 class=header>Mario Nachbaur</h1>
+    <p>Full Stack software developer at <a href=https://z1.digital target=_blank rel="noopener noreferrer">Z1 Digital
+        Studio</a>, mainly focused
+      on building great web & mobile
+      apps.</p>
+    <p>Artificial Inteligence, Functional Programming and Rubik Cubes.</p>
+
+    <h2 class=section-header>See Also</h2>
+    <ul>
+      <li><a href=https://github.com/marionauta target=_blank rel="me noopener noreferrer">github/marionauta</a></li>
+      <li><a href=https://twitter.com/marionauta target=_blank rel="me noopener noreferrer">twitter/marionauta</a></li>
+    </ul>
+
+    <h2 class=section-header>Words</h2>
+    <ul>
+      <li><a href=https://dev.to/marionauta/avoid-notches-in-your-pwa-with-just-css-al7 target=_blank
+          rel="noopener noreferrer">Avoid notches in your PWA with just CSS</a> &mdash; Quick notes about avoiding the
+        iPhone X notch on the web</li>
+    </ul>
+
+    <h2 class=section-header>Projects</h2>
+    <ul>
+      <li class=project>
+        <span class=project--name>Less</span> &mdash; Alcohol tracker
+        <ul>
+          <li>An iPhone app written completely in Swift</li>
+          <li>Backend using Firebase cloud functions</li>
+        </ul>
+      </li>
+      <li class=project>
+        <span class=project--name>Rah Rah</span> &mdash; Student life, simplified
+        <ul>
+          <li>Progressive Web App written in React/TypeScript</li>
+          <li>styled-components for the styling</li>
+        </ul>
+      </li>
+      <li class=project>
+        <a class=project--name href=https://loftsmart.com target=_blank rel="noopener noreferrer">LoftSmart</a>
+        &mdash; Off campus student housing
+        <ul>
+          <li>Frontend written in React</li>
+          <li>Backend using Django and REST Framework</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>
