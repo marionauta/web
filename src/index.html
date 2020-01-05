@@ -50,12 +50,8 @@
     font-weight: inherit;
   }
 
-  .project:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-
-  .project--name {
-    font-weight: 700;
+  .project+.project {
+    margin-top: 1rem;
   }
 </style>
 
@@ -91,7 +87,7 @@
     <h2 class=section-header>Projects</h2>
     <ul>
       <li class=project>
-        <a class=project--name href=https://lessdrinks.com target=_blank rel="noopener noreferrer">Less</a>
+        <a href=https://lessdrinks.com target=_blank rel="noopener noreferrer">Less</a>
         &mdash; Alcohol tracker
         <ul>
           <li>Project creation and engineering decisions</li>
@@ -100,14 +96,14 @@
         </ul>
       </li>
       <li class=project>
-        <span class=project--name>Rah Rah</span> &mdash; Student life, simplified
+        <span>Rah Rah</span> &mdash; Student life, simplified
         <ul>
           <li>Progressive Web App written in React/TypeScript</li>
           <li>styled-components for the styling</li>
         </ul>
       </li>
       <li class=project>
-        <a class=project--name href=https://loftsmart.com target=_blank rel="noopener noreferrer">LoftSmart</a>
+        <a href=https://loftsmart.com target=_blank rel="noopener noreferrer">LoftSmart</a>
         &mdash; Off campus student housing
         <ul>
           <li>Frontend written in React</li>
