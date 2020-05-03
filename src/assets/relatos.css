@@ -1,0 +1,28 @@
+body {
+  font: 20px serif;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.6);
+  font: 24px sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+blockquote {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+}
+
+.date {
+  color: grey;
+  font: .8em sans-serif;
+}
