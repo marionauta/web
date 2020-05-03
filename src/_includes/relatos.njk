@@ -1,0 +1,13 @@
+{% extends "baseof.njk" %}
+
+{%- block stylesheets -%}
+  <link rel=stylesheet href=/assets/style.css>
+  <link rel=stylesheet href=/assets/relatos.css>
+{%- endblock -%}
+
+{% block content %}
+<a href={{ page.url }} class=date>{{ date.toLocaleString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }) }}</a>
+<h1>{{ title }}</h1>
+{% if subtitle %}<h2>{{ subtitle }}</h2>{% endif %}
+{{ content | safe }}
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-layout: list.liquid
+layout: list
 title: Relatos
 tags:
 ---
