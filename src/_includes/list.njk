@@ -1,0 +1,16 @@
+{% extends "baseof.njk" %}
+
+{%- block stylesheets -%}
+  <link rel=stylesheet href=/assets/style.css>
+{%- endblock -%}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <ul>
+      {% for relato in collections.relatos | reverse %}
+      <li>
+        <a href={{ relato.url }}>{{ relato.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+{% endblock %}
