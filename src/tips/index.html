@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Tips</title>
+  <base target=_blank>
+
+  <style>
+    :root {
+      --background-color: 255, 255, 255;
+      --foreground-color: 0, 0, 0;
+      --accent-color: 255, 165, 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+        --background-color: 0, 0, 0;
+        --foreground-color: 255, 255, 255;
+      }
+    }
+
+    body {
+      background: rgb(var(--background-color));
+      color: rgb(var(--foreground-color));
+      font: 16px monospace;
+      margin: 1rem 1rem 8rem;
+    }
+
+    .wrapper {
+      margin: auto;
+      max-width: 35rem;
+    }
+
+    .animoji {
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .payment {
+      display: block;
+      margin-top: 1px;
+      background-color: rgba(var(--foreground-color), 0.2);
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a.payment, .payment summary, .payment .address {
+      padding: 1rem;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=wrapper>
+    <img class=animoji src=https://assets.nachbaur.dev/animoji.png>
+
+    <p>Hello! I'm Mario Nachbaur<span id=credits></span>.</p>
+    <p>If you like the apps I create you can send me some tips to help with development.</p>
+    <p>Here are some payment options you can use:</p>
+
+    <a class=payment href=https://paypal.me/manachbaur/2.5>Paypal</a>
+
+    <a class=payment href=https://ko-fi.com/marionauta>Ko-fi</a>
+
+    <details class=payment>
+      <summary>Bitcoin</summary>
+      <div class=address>3HJovz4bJmCcHFJMrj6GtMtBncoMCtRYgN</div>
+    </details>
+
+    <details class=payment>
+      <summary>Ethereum</summary>
+      <div class=address>0x0D5624414e6512092fd88fbA19fCe0EaA35F8b64</div>
+    </details>
+
+    <details class=payment>
+      <summary>Monero</summary>
+      <div class=address>4ARu5FLs4rHfi645yb8RjkMUzccFqFqpn2bSsHP4fXhgEeDwhyvFwSx6TPzyaEw75gjC985HaMrno1eocSQ7HW2rVTKNkNF</div>
+    </details>
+  </div>
+
+  <script>
+    let app;
+    const query = window.location.search.substring(1);
+    for (const item of query.split('&')) {
+      const [name, value] = item.split('=');
+      if (name === 'app') {
+        app = decodeURIComponent(value);
+      }
+    }
+
+    if (app) {
+      document.getElementById('credits').innerText = `, developer of ${app}`;
+    }
+  </script>
+</body>
+
+</html>
