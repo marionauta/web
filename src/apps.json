@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "mn.openlocations",
+      "name": "Water Finder",
+      "name:es": "AguApp",
+      "tagline": "Find fountains in your city",
+      "tagline:es": "Encuentra fuentes en tu ciudad",
+      "android": "https://play.google.com/store/apps/details?id=mn.openlocations",
+      "ios": "https://apps.apple.com/app/id6447196147"
+    },
+    {
+      "id": "mn.calculator",
+      "name": "Xi Calculator",
+      "tagline": "Advanced everyday calculator",
+      "ios": "https://testflight.apple.com/join/AZSypkSa",
+      "beta": true
+    },
+    {
+      "id": "mn.eugenios",
+      "name": "Eugenio's Escape",
+      "tagline": "8bit retro platformer game",
+      "tagline:es": "Juego plataformas retro 8bit",
+      "android": "https://play.google.com/store/apps/details?id=mn.eugenios",
+      "ios": "https://apps.apple.com/us/app/eugenios-escape/id6447700127"
+    }
+  ]
+}
