@@ -1,6 +1,12 @@
 {
   "data": [
     {
+      "id": "mn.scorekeeper",
+      "name": "Score Keeper",
+      "tagline": "Track board and card game scores",
+      "ios": "https://apps.apple.com/app/id6475423612"
+    },
+    {
       "id": "mn.openlocations",
       "name": "Water Finder",
       "name:es": "AguApp",
