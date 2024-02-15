@@ -87,6 +87,8 @@
 
   .yt { color: #FF0000 }
 
+  .sk { color: #6a6 }
+
   li {
     background: currentColor;
     transition: transform .1s;
@@ -100,6 +102,10 @@
 
   li+li {
     margin-top: 1rem;
+  }
+
+  .sk + li:not(.sk) {
+    margin-top: 1.5em;
   }
 
   li a {
@@ -117,6 +123,9 @@
       <span class=tagline>is making software</span>
     </header>
     <ul>
+      <li class=sk>
+        <a href=https://apple.co/3RYmW2N>Download Score Keeper</a>
+      </li>
       <li class=pw>
         <a href=/ target=_self>website & portfolio</a>
       </li>
