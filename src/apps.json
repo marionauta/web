@@ -4,7 +4,8 @@
       "id": "mn.scorekeeper",
       "name": "Score Keeper",
       "tagline": "Track board and card game scores",
-      "ios": "https://apps.apple.com/app/id6475423612"
+      "ios": "https://apps.apple.com/app/id6475423612",
+      "scheme": "scorekeeper"
     },
     {
       "id": "mn.openlocations",
@@ -13,7 +14,8 @@
       "tagline": "Find fountains in your city",
       "tagline:es": "Encuentra fuentes en tu ciudad",
       "android": "https://play.google.com/store/apps/details?id=mn.openlocations",
-      "ios": "https://apps.apple.com/app/id6447196147"
+      "ios": "https://apps.apple.com/app/id6447196147",
+      "scheme": "aguapp"
     },
     {
       "id": "mn.calculator",
