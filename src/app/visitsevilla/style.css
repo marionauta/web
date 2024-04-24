@@ -1,0 +1,45 @@
+:root {
+    --color-accent: #A50034;
+    --color-detail: #FFAB60;
+    --color-background: rgb(255, 171, 96, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    font-size: 22px;
+}
+
+header {
+    font-size: 1.4em;
+}
+
+h1 {
+    color: var(--color-accent);
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+a:hover {
+    text-decoration-style: dashed;
+}
+
+.wrapper {
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.downloads {
+    text-align: center;
+}
