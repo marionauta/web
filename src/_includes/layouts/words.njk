@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<main class="article">
+  <nav class="article--navigation">
+    <a href="/">Mario Nachbaur</a>
+    <span> / </span>
+    <a href="/words/">Words</a>
+    <span> / </span>
+  </nav>
+
+  <header class="article--header">
+    <h1 class="article--title">{{ title }}</h1>
+    <span class="article--author">{{ author or metadata.author }}</span>
+  </header>
+
+  <div class="article--content">
+    {{ content | safe }}
+  </div>
+</main>
