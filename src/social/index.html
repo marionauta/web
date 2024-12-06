@@ -12,8 +12,6 @@
   <meta name=author content="Mario Nachbaur Riscos">
   <meta name=keywords content="Software, Developer, Mobile, Native, Swift, iOS, Kotlin, Android">
   <meta name=description content="Mario Nachbaur is a software crafter, mainly focused on mobile development and games.">
-  <meta name=twitter:card content=summary>
-  <meta name=twitter:creator content=@MarioMakesSftwr>
   <meta property=og:title content="Mario Nachbaur; Software Crafter">
   <meta property=og:image content=https://assets.nachbaur.dev/animoji.png>
   <meta property=og:description content="Mario Nachbaur is a software crafter, mainly focused on mobile development and games.">
@@ -67,10 +65,6 @@
     color: #fa0
   }
 
-  .md {
-    color: #8c8dff;
-  }
-
   .ch {
     color: #da2c49;
   }
@@ -87,25 +81,30 @@
 
   .yt { color: #FF0000 }
 
-  .sk { color: #6a6 }
-
   li {
     background: currentColor;
     transition: transform .1s;
-    border-radius: 2px;
     text-align: center;
+    box-shadow: -3px 3px 0 rgba(from currentColor r g b / .6);
+  }
+
+  li .detail {
+    display: block;
+    font-size: .75em;
+    opacity: .6;
+    transition: opacity .3s;
   }
 
   li:hover {
     transform: scale(1.05);
+
+    & .detail {
+      opacity: 1;
+    }
   }
 
   li+li {
     margin-top: 1rem;
-  }
-
-  .sk + li:not(.sk) {
-    margin-top: 1.5em;
   }
 
   li a {
@@ -119,37 +118,29 @@
 <body>
   <div class=wrapper>
     <header>
-      <h1>Mario Nachbaur</h1>
+      <h1>Mario</h1>
       <span class=tagline>is making software</span>
     </header>
     <ul>
-      <li class=sk>
-        <a href=https://apple.co/3RYmW2N>
-          Track points with<br />
-          Scoring Computer
-        </a>
-      </li>
       <li class=pw>
         <a href=/ target=_self>website & portfolio</a>
       </li>
       <li class=bs>
         <a href=https://bsky.app/profile/nauta.one rel="me noopener noreferrer">
           bluesky
+          <span class=detail>@nauta.one</span>
         </a>
       </li>
       <li class=th>
-        <a href=https://www.threads.net/@mariomakessftwr rel="me noopener noreferrer">
+        <a href=https://www.threads.net/@MarioMakesSftwr rel="me noopener noreferrer">
           threads
-        </a>
-      </li>
-      <li class=tw>
-        <a href=https://twitter.com/MarioMakesSftwr rel="me noopener noreferrer">
-          x / twitter
+          <span class=detail>@MarioMakesSftwr</span>
         </a>
       </li>
       <li class=ig>
         <a href=https://instagram.com/MarioMakesSftwr rel="me noopener noreferrer">
           instagram
+          <span class=detail>@MarioMakesSftwr</span>
         </a>
       </li>
       <li class=yt>
@@ -165,6 +156,11 @@
       <li class=ch>
         <a href=https://marionauta.itch.io rel="me noopener noreferrer">
           itch.io
+        </a>
+      </li>
+      <li class=tw>
+        <a href=https://twitter.com/MarioMakesSftwr rel="me noopener noreferrer">
+          x / twitter
         </a>
       </li>
     </ul>
