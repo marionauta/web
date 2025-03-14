@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang=en>
-
 <head>
   <meta charset=utf-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
@@ -17,13 +16,20 @@
   <meta property=og:title content="Mario Nachbaur; Software Crafter">
   <meta property=og:image content=https://assets.nachbaur.dev/animoji.png>
   <meta property=og:description content="Mario Nachbaur is a software crafter, mainly focused on mobile development for iOS">
-  <script defer data-domain=mario.nachbaur.dev src=https://plausible.io/js/script.js></script>
+  <link href=/assets/recursive.css rel=stylesheet>
 
   <style>
     body {
       background: #111;
       color: #fff;
-      font: 16px monospace;
+      font-size: 18px;
+      font-family: "Recursive", monospace;
+      font-variation-settings:
+        "MONO" 1,
+        "CASL" 0.5,
+        "slnt" 0,
+        "CRSV" 0;
+      font-weight: 450;
       margin: 1rem 1rem 8rem;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -31,7 +37,6 @@
 
     a {
       color: #d81;
-      font-weight: bold;
       text-decoration: none;
     }
 
@@ -41,16 +46,13 @@
     }
 
     h1 {
-      font-size: 2rem;
-      font-weight: inherit;
+      font-size: 2em;
       margin: 0;
+      font-weight: inherit;
     }
 
     h1 a {
-      background: none;
       color: inherit;
-      padding: 0;
-      margin: 0;
     }
 
     h2 {
