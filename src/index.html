@@ -108,9 +108,9 @@
       I may be available.
     </p>
 
-    <h2><a href=/words/ target=_self>Articles</a></h2>
+    <h2><a href=/words/ target=_self>Recent articles</a></h2>
     <ul class="breathe">
-      {%- for post in collections.words -%}
+      {%- for post in collections.words reversed -%}
         <li>
           <a href="{{ post.url }}" target=_self>{{ post.data.title }}</a>
         </li>

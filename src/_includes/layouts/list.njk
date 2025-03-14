@@ -13,7 +13,7 @@ layout: layouts/base.njk
   </header>
 
   <ul class="article--list">
-  {%- for post in collections.words -%}
+  {%- for post in collections.words | reverse -%}
     <li>
       <a class="article--title" href="{{ post.url }}">{{ post.data.title }}</a>
       <span class="article--date">{{ post.data.date | simpledate }}</span>
