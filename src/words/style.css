@@ -1,105 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
 :root {
-    --color-accent: orange;
-    --color-border: #aaa;
+  --color-accent: #961;
+  --color-foreground: #333;
+  --color-background: #fff;
+  --color-background-code: #efefef;
+  --color-border: #aaa;
+
+  --font-family-sans: "Recursive", sans-serif;
+  --font-settings-body: "MONO" 0, "CASL" 0, "CRSV" 0;
+  --font-settings-title: "MONO" 0, "CASL" 0.5, "CRSV" 1;
+  --font-family-mono: "Recursive", monospace;
+  --font-settings-code: "MONO" 1, "CASL" 0.5, "CRSV" 0;
+  --font-settings-quote: "MONO" 0, "CASL" 0, "slnt" -15;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #d81;
+    --color-foreground: #fff;
+    --color-background: #222;
+    --color-background-code: #333;
+    --color-border: #575757;
+  }
 }
 
 body {
-    margin: 1em;
-    font-family: "Libre Baskerville", serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4;
+  margin: 1em;
+  margin-bottom: 69px;
+  font-family: var(--font-family-sans);
+  font-variation-settings: var(--font-settings-body);
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1.4;
+  color: var(--color-foreground);
+  background: var(--color-background);
 }
 
 a {
-    color: var(--color-accent);
-    text-decoration: none;
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 hr {
-    width: 25%;
-    border: 1px solid var(--color-border);
+  width: 25%;
+  border: 1px solid var(--color-border);
 }
 
 blockquote {
-    font-style: italic;
+  font-style: oblique;
+  font-variation-settings: var(--font-settings-quote);
 }
 
 code {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    background-color: #efefef;
-    padding: 0 0.2em;
-    border-radius: 0.125em;
-    word-break: break-word;
+  font-family: var(--font-family-mono);
+  font-variation-settings: var(--font-settings-code);
+  background: var(--color-background-code);
+  padding: 0 0.2em;
+  border-radius: 0.125em;
+  word-break: break-word;
 }
 
 pre {
-    background-color: #efefef;
-    border-radius: 0.25em;
-    overflow-x: auto;
+  background-color: var(--color-background-code);
+  border-radius: 0.25em;
+  overflow-x: auto;
 }
 
 pre code {
-    display: block;
-    padding: 0.5em;
-    background: none;
+  display: block;
+  padding: 0.5em;
+  background: none;
 }
 
 main.article {
-    max-width: 42em;
-    margin: 0 auto;
+  max-width: 42em;
+  margin: 0 auto;
 }
 
 .article--navigation {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
+  font-family: var(--font-family-mono);
+  font-variation-settings: var(--font-settings-code);
 }
 
 .article--header {
-    margin: 4em 0;
-    text-align: center;
+  margin: 4em 0;
+  text-align: center;
 }
 
-.article--title {
-    font-size: 2.5em;
-    font-weight: 700;
-    line-height: initial;
+.article--header .article--title {
+  font-size: 2.5em;
+  font-weight: 450;
+  line-height: initial;
+  font-variation-settings: var(--font-settings-title);
 }
 
 .article--list {
-    list-style: none;
-    padding-inline-start: 0;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.article--list .article--title {
+  font-variation-settings: var(--font-settings-title);
 }
 
 .article--list li {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em 0;
-    align-items: start;
-    justify-content: space-between;
-    gap: 1em;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 0;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 .article--list li + li {
-    border-top: 1px dashed var(--color-border);
+  border-top: 1px dashed var(--color-border);
 }
 
 .article--list .article--date {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
+  font-family: var(--font-family-mono);
+  font-variation-settings: var(--font-settings-code);
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        margin: 1rem;
-    }
+  body {
+    margin: 1rem;
+  }
 
-    .article--title {
-        font-size: 1.5em;
-    }
+  .article--header .article--title {
+    font-size: 1.5em;
+  }
 }
