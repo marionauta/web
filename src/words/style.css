@@ -93,6 +93,13 @@ main.article {
   font-variation-settings: var(--font-settings-title);
 }
 
+.article--content h2 {
+  font-size: 1.75em;
+  font-weight: 450;
+  line-height: initial;
+  font-variation-settings: var(--font-settings-title);
+}
+
 .article--list {
   list-style: none;
   padding-inline-start: 0;
@@ -127,5 +134,9 @@ main.article {
 
   .article--header .article--title {
     font-size: 1.5em;
+  }
+
+  .article--content h2 {
+    font-size: 1.4em;
   }
 }
