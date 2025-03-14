@@ -51,13 +51,13 @@
       font-weight: inherit;
     }
 
-    h1 a {
-      color: inherit;
-    }
-
     h2 {
       font-size: 1.5rem;
       font-weight: inherit;
+    }
+
+    h1 a, h2 a {
+      color: inherit;
     }
 
     .breathe {
@@ -107,6 +107,15 @@
       <a href=/contact target=_self>contact me.</a>
       I may be available.
     </p>
+
+    <h2><a href=/words/ target=_self>Articles</a></h2>
+    <ul class="breathe">
+      {%- for post in collections.words -%}
+        <li>
+          <a href="{{ post.url }}" target=_self>{{ post.data.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
 
     <h2>Stuff I have done</h2>
     <ul class=breathe>
