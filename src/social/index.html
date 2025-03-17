@@ -7,118 +7,22 @@
   <base target=_blank>
   <link rel=icon href=data:,>
   <title>Links | Mario Nachbaur</title>
-  <link rel=canonical href="https://mario.nachbaur.dev/social/">
-  <link property=og:url content="https://mario.nachbaur.dev/social/">
+  <link rel=canonical href="{{ site.url }}/social/">
+  <link property=og:url content="{{ site.url }}/social/">
   <meta name=author content="Mario Nachbaur Riscos">
   <meta name=keywords content="Software, Developer, Mobile, Native, Swift, iOS, Kotlin, Android">
   <meta name=description content="Mario Nachbaur is a software crafter, mainly focused on mobile development and games.">
   <meta property=og:title content="Mario Nachbaur; Software Crafter">
   <meta property=og:image content=https://assets.nachbaur.dev/animoji.png>
   <meta property=og:description content="Mario Nachbaur is a software crafter, mainly focused on mobile development and games.">
+  <link href=/assets/recursive.css rel=stylesheet>
+  <link href=/social/social.css rel=stylesheet>
 </head>
-
-<style>
-  body {
-    background: #fff;
-    color: #000;
-    font: 20px monospace;
-    margin: 1rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background: #111;
-      color: #fff;
-    }
-  }
-
-  .wrapper {
-    margin: auto;
-    max-width: 25rem;
-  }
-
-  header {
-    margin: 2.5em 0;
-    text-align: center;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: inherit;
-  }
-
-  header .tagline {
-    font-style: italic;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .tt, .th { color: #333 }
-
-  .pw {
-    color: #fa0
-  }
-
-  .ch {
-    color: #da2c49;
-  }
-
-  .tw {
-    color: #1da1f2
-  }
-
-  .bs { color: rgb(45, 123, 255) }
-
-  .ig {
-    color: #c13584
-  }
-
-  .yt { color: #FF0000 }
-
-  li {
-    background: currentColor;
-    transition: transform .1s;
-    text-align: center;
-    box-shadow: -3px 3px 0 rgba(from currentColor r g b / .6);
-  }
-
-  li .detail {
-    display: block;
-    font-size: .75em;
-    opacity: .6;
-    transition: opacity .3s;
-  }
-
-  li:hover {
-    transform: scale(1.05);
-
-    & .detail {
-      opacity: 1;
-    }
-  }
-
-  li+li {
-    margin-top: 1rem;
-  }
-
-  li a {
-    color: white;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-  }
-</style>
 
 <body>
   <div class=wrapper>
     <header>
-      <h1>Mario</h1>
+      <h1><a href=/>Mario Nachbaur</a></h1>
       <span class=tagline>is making software</span>
     </header>
     <ul>
@@ -156,11 +60,6 @@
       <li class=ch>
         <a href=https://marionauta.itch.io rel="me noopener noreferrer">
           itch.io
-        </a>
-      </li>
-      <li class=tw>
-        <a href=https://twitter.com/MarioMakesSftwr rel="me noopener noreferrer">
-          x / twitter
         </a>
       </li>
     </ul>

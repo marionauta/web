@@ -17,77 +17,20 @@
   <meta property=og:title content="Mario Nachbaur; Software Crafter">
   <meta property=og:image content=https://assets.nachbaur.dev/animoji.png>
   <meta property=og:description content="Mario Nachbaur is a software crafter, mainly focused on mobile development for iOS">
-  <script defer data-domain="mario.nachbaur.dev" src="https://plausible.io/js/script.js"></script>
+  <link href=/assets/recursive.css rel=stylesheet>
+  <link href=/social/social.css rel=stylesheet>
 </head>
-
-<style>
-  body {
-    background: #fff;
-    color: #000;
-    font: 16px monospace;
-    margin: 1rem;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background: #111;
-      color: #fff;
-    }
-  }
-
-  .wrapper {
-    margin: auto;
-    max-width: 25rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-    font-weight: inherit;
-    text-align: center;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .pw { color: #fa0 }
-  .gh { color: #333 }
-  .ma { color: #D4524F }
-  .li { color: #0077b5 }
-
-  li {
-    color: #333;
-    background: currentColor;
-    transition: transform .1s;
-  }
-
-  li:hover {
-    transform: scale(1.05);
-  }
-
-  li+li {
-    margin-top: 1rem;
-  }
-
-  li a {
-    color: white;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-  }
-</style>
 
 <body>
   <div class=wrapper>
-    <h1>Mario Nachbaur</h1>
+    <header>
+      <h1><a href=/>Mario Nachbaur</a></h1>
+    </header>
     <ul>
       <li class=pw>
-        <a href=/ target=_self>
-            &larr; back to the web
-        </a>
+        <a href=/ target=_self>website & portfolio</a>
       </li>
-      <li>
+      <li class=tt>
         <a href="mailto:mario@nachbaur.dev">
           email
         </a>
@@ -100,6 +43,7 @@
       <li class=gh>
         <a href=https://github.com/marionauta rel="me noopener noreferrer">
           github
+          <span class=detail>@marionauta</span>
         </a>
       </li>
       <li class=ma>
