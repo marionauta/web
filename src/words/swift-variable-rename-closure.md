@@ -1,5 +1,6 @@
 ---
 title: Renaming variables in Swift closure capture lists
+description: Learning what capture lists are and a sample use case of renaming variables inside them. 
 author: Mario Nachbaur Riscos
 date: 2024-03-28
 ---

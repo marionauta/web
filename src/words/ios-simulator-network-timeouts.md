@@ -1,5 +1,6 @@
 ---
 title: Why your network requests may timeout intermittently in your iOS simulator
+description: Sometimes the iOS simulators refused to connect to our backend, and all the requests did timeout. Here's how we solved it.
 author: Mario Nachbaur Riscos
 date: 2024-11-05
 ---
@@ -8,7 +9,7 @@ date: 2024-11-05
 
 ---
 
-For some time, we at the iOS team at work were experiencing a quite strange phenomenon with the iOS simulators. Some times, some days, but not always, the iOS simulators refused to connect to our backend APIs, and all the requests did timeout. This meant we had to switch to developing and testing on our physical devices, which is a tad more inconvenient. Restarting the router, disconnecting or connecting to a VPN would help fix the issue, but not always.
+For some time, we at the iOS team at work were experiencing a quite strange phenomenon with the iOS simulators. Sometimes, some days, but not always, the iOS simulators refused to connect to our backend APIs, and all the requests did timeout. This meant we had to switch to developing and testing on our physical devices, which is a tad more inconvenient. Restarting the router, disconnecting or connecting to a VPN would help fix the issue, but not always.
 
 We even thought our backend, or any proxy service in use, had some sort of geographical restriction or protection against bots — remember, only the simulators were affected. But inspecting the raw network requests, the ones made with a physical device and the ones from a simulator were 100% identical, so not sure how they would detect a simulator request.
 
