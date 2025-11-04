@@ -1,13 +1,6 @@
 {
   "data": [
     {
-      "id": "mn.scorekeeper",
-      "name": "Score Keeper",
-      "tagline": "Track board and card game scores",
-      "ios": "https://apps.apple.com/app/id6475423612",
-      "scheme": "scorekeeper"
-    },
-    {
       "id": "mn.openlocations",
       "name": "Water Finder",
       "name:es": "AguApp",
@@ -18,11 +11,19 @@
       "scheme": "aguapp"
     },
     {
-      "id": "mn.calculator",
-      "name": "Xi Calculator",
-      "tagline": "Advanced everyday calculator",
-      "ios": "https://testflight.apple.com/join/AZSypkSa",
-      "beta": true
+      "id": "mn.visitsevilla",
+      "name": "Visit Sevilla",
+      "tagline": "Your own travel guide",
+      "tagline:es": "Tu propia guía de viajes",
+      "android": "https://play.google.com/store/apps/details?id=mn.visitsevilla",
+      "ios": "https://apps.apple.com/app/id6499165034"
+    },
+    {
+      "id": "mn.scorekeeper",
+      "name": "Score Keeper",
+      "tagline": "Track board and card game scores",
+      "ios": "https://apps.apple.com/app/id6475423612",
+      "scheme": "scorekeeper"
     },
     {
       "id": "mn.eugenios",
