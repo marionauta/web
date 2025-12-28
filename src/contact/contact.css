@@ -84,33 +84,12 @@ li a {
 }
 
 .tt,
-.th,
 .gh {
   color: #333;
 }
 
 .pw {
   color: #fa0;
-}
-
-.ch {
-  color: #da2c49;
-}
-
-.bs {
-  color: rgb(45, 123, 255);
-}
-
-.ig {
-  color: #c13584;
-}
-
-.yt {
-  color: #ff0000;
-}
-
-.ma {
-  color: #d4524f;
 }
 
 .li {
