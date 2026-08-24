@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("./src/*.json");
   eleventyConfig.addPassthroughCopy("./src/**/*.css");
+  eleventyConfig.addPassthroughCopy("./src/**/*.png");
   eleventyConfig.addPassthroughCopy("./src/*.txt");
 
   eleventyConfig.addFilter("simpledate", function(date) {

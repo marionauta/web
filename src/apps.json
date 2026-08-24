@@ -4,34 +4,47 @@
       "id": "mn.openlocations",
       "name": "Water Finder",
       "name:es": "AguApp",
-      "tagline": "Find fountains in your city",
-      "tagline:es": "Encuentra fuentes en tu ciudad",
+      "tagline": "Fountains and restrooms near you",
+      "tagline:es": "Fuentes y baños cerca de ti",
+      "icon": "https://waterfinder.org/assets/icon.png",
       "android": "https://play.google.com/store/apps/details?id=mn.openlocations",
-      "ios": "https://apps.apple.com/app/id6447196147",
-      "scheme": "aguapp"
+      "ios": "https://apps.apple.com/app/id6447196147"
+    },
+    {
+      "id": "mn.scorekeeper",
+      "name": "Score Keeper",
+      "tagline": "Track board and card game scores",
+      "tagline:es": "Puntuaciones en juegos de mesa y cartas",
+      "icon": "https://scoring.computer/assets/favicon.png",
+      "android": "https://play.google.com/store/apps/details?id=mn.scorekeeper",
+      "ios": "https://apps.apple.com/app/id6475423612"
+    },
+    {
+      "id": "mn.visitberlin",
+      "name": "Visit Berlin",
+      "tagline": "Your own travel guide",
+      "tagline:es": "Tu propia guía de viajes",
+      "icon": "https://mario.nachbaur.dev/app/visitberlin/assets/icon.png",
+      "android": "https://play.google.com/store/apps/details?id=mn.visitberlin",
+      "ios": "https://apps.apple.com/app/id6794615648"
     },
     {
       "id": "mn.visitsevilla",
       "name": "Visit Sevilla",
       "tagline": "Your own travel guide",
       "tagline:es": "Tu propia guía de viajes",
+      "icon": "https://mario.nachbaur.dev/app/visitsevilla/assets/icon.png",
       "android": "https://play.google.com/store/apps/details?id=mn.visitsevilla",
       "ios": "https://apps.apple.com/app/id6499165034"
-    },
-    {
-      "id": "mn.scorekeeper",
-      "name": "Score Keeper",
-      "tagline": "Track board and card game scores",
-      "ios": "https://apps.apple.com/app/id6475423612",
-      "scheme": "scorekeeper"
     },
     {
       "id": "mn.eugenios",
       "name": "Eugenio's Escape",
       "tagline": "8bit retro platformer game",
       "tagline:es": "Juego plataformas retro 8bit",
+      "icon": "https://eugeniosescape.nachbaur.dev/assets/icon.png",
       "android": "https://play.google.com/store/apps/details?id=mn.eugenios",
-      "ios": "https://apps.apple.com/us/app/eugenios-escape/id6447700127"
+      "ios": "https://apps.apple.com/app/id6447700127"
     }
   ]
 }
